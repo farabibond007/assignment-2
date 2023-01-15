@@ -7,6 +7,7 @@
     --secondary-text-color: #424242;
     --tertiary-color: #727272;
     --black-color: #131313;
+    --number-color:#424242;
 
 }
 
@@ -69,12 +70,17 @@ nav{
     margin-top: 50px;
     padding-bottom: 30px;
 }
+/* main */
+main ,footer{
+    max-width: 1150px;
+    margin: 0 auto;
+}
 
 /* list of features styling */
 
 .feature-start > h3{
     font-weight: 700;
-    font-size: 45px;
+    font-size: 35px;
     margin-bottom: 24px;
 }
 .first {
@@ -91,7 +97,7 @@ nav{
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
     width: 50%;
-    margin-left: 200px;
+    margin-left: 170px;
     margin-top: 80px;
 }
 .feature-start-container{
@@ -104,7 +110,7 @@ nav{
 }
 .feature-start{
     margin-left: 65px;
-    margin-right: 300px;
+    margin-right: 200px;
     width: 50%;
 }
 
@@ -120,13 +126,13 @@ nav{
 .feature-list-container{
     display: flex;
     margin-top: 120px;
-    max-width: 1100px;
-    width: 100%;
-    margin: 120px auto;
+    /* max-width: 1100px; */
+    /* width: 100%; */
+    /* margin: 120px auto; */
     
 }
 .feature{
-    margin-top: 20px;
+    margin: 20px;
     padding: 30px;
 
 }
@@ -158,7 +164,7 @@ nav{
     font-size: 15px;
 }
 .facts{
-    max-width: 1100px;
+    /* max-width: 1100px; */
     margin: 0 auto;
 }
 .fact-title{
@@ -171,5 +177,68 @@ nav{
     font-weight: 400;
     font-size: 16px;
     color: var(--tertiary-color);
+    margin-bottom: 100px;
+}
+.mega-borders{
+    display: flex;
+    gap: 125px;
+    margin-left: 30px;
+    margin-bottom: 130px;
+}
+.border{
+    border: 1px solid var(--primary-btn-color);
+    padding: 38px;
+    border-radius: 5px;
+    width: 250px;
+    height: 190px;
+    text-align: center;
+}
+.number{
+    font-weight: 600;
+    font-size: 35px;
+    color: var(--number-color);
+    padding: 7px 0px;
+}
+.number-details{
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--tertiary-color);
+}
+
+/* footer styles */
+
+.logos{
+    display: flex;
+    gap: 70px;
+
+}
+.logo{
+    margin-right: 10px;
+    mix-blend-mode: luminosity;
+}
+
+.footer-title{
+    font-weight: 700;
+    font-size: 45px;
+    color: var(--black-color);
+    text-align: center;
+}
+.footer-details{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--tertiary-color);
+    text-align: center;
+    margin: 24px 0px;
+}
+.last-part{
+    border: 1px;
+    background: #FFF4E7;
+    margin-top:80px;
+}
+.copyrights{
+    padding: 38px 400px;
+    font-weight: 400;
+    font-size: 11px;
+    color: var(--secondary-text-color);
 }
 
